@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: goldenrod;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: bisque;
+            text-shadow: 2px 2px 2px black;
+            font-weight: bolder;
+        }
+        p{
+            color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 1px lightblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ <center>
+    <h1>Objects in J.S.</h1>
+    <br><br>
+    <p id="para"></p>
+    <script>
+        var intro={yname:"Suyog",age:14,grade:8,school:"GEMS School"};
+        document.getElementById("para").innerHTML= "My name is "+intro.yname+". I am "+intro.age+" years old."+"I study in grade "+intro.grade+" of "+intro.school;
+    </script>
+ </center>
+ 
+</body>
+</html>
