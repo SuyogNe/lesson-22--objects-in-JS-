@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arguement in J.S.</h1>
+    <p id="para"></p>
+    <script>
+        function findMax()
+        {
+            var i;
+            var max=0;
+            for (i=0; i < arguments.length;i++)
+        {
+            if (arguments[i] > max)
+        {
+            max = arguments[i];
+        }
+        }
+        return max;
+        }
+        document.getElementById("para").innerHTML=findMax(27,0,84,93,71,54)+ " is the largest number."
+    </script>
+</body>
+</html>
